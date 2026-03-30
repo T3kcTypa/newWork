@@ -1,0 +1,20 @@
+.sales {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 0.75rem;
+    left: 1rem;
+
+    border-radius: 1.5rem;
+    padding: 0.38rem 1rem;
+    width: 4.63rem;
+    height: 2rem;
+    background-color: var(--color-primary-yellow);
+}
+
+.sales span {
+    font: var(--text-sales);
+    color: var(--color-primary-red);
+}

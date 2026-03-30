@@ -1,0 +1,40 @@
+.Count {
+    width: 8.31rem;
+    height: 2.5rem;
+    border:1px solid var(--color-gray-100);
+    border-radius: 7.5rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: var(--color-primary-white);
+    position: absolute;
+    left: 16px;
+    top: 158px;
+}
+
+.Count > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Count::before,
+.Count::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 100%;
+    background: var(--color-gray-100);
+}
+
+.Count::before {
+    left: 33.33%;
+}
+
+.Count::after {
+    left: 66.66%;
+}

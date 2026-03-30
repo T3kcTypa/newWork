@@ -1,0 +1,11 @@
+.buttonStyle {
+    width: 9.13rem;
+    height: 2.5rem;
+    background-color: var(--color-primary-red);
+    border: none;
+    border-radius: 7.5rem;
+    padding: 0.56rem 1.5rem 0.69rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}

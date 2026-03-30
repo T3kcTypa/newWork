@@ -1,0 +1,12 @@
+.main {
+    padding-top: 1rem;
+    margin: 0 auto;
+    width: 87.5rem;
+    height: 48.13rem;
+    display: grid;
+    grid-template-areas:
+            "menu Bg Bg"
+            "card card card" ;
+    grid-row-gap: 0.50rem;
+    grid-column-gap: 1.65rem;
+}

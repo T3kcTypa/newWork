@@ -1,0 +1,4 @@
+.text {
+    font: var(--text-productCard);
+    color: var(--color-gray-900);
+}

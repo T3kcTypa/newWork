@@ -1,0 +1,14 @@
+.h3Title {
+    font-family: var(--font-accent), sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: var(--color-primary-darkBlue);
+
+    width: 23.60rem;
+    height: 4.56rem;
+
+    margin: 0 auto;
+}

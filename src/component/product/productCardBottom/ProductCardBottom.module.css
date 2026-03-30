@@ -1,0 +1,17 @@
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 0;
+    height: 7.38rem;
+}
+
+.productRating {
+    display: flex;
+    gap: 1.30rem;
+    align-items: center;
+
+    width: 12.75rem;
+    height: 1.31rem;
+}

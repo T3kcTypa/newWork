@@ -1,0 +1,21 @@
+.scrollSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 18.56rem;
+    height: 5.44rem;
+    margin-top: 1rem;
+}
+
+.scrollContainer {
+    width: 87.5rem;
+    height: 22.63rem;
+    margin: 0 auto;
+}
+
+.scrollSectionContainer {
+    width: 95.5rem;
+    height: 22.63rem;
+    display: flex;
+    align-items: center;
+}

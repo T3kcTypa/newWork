@@ -1,0 +1,23 @@
+
+.cardFLex {
+    display: flex;
+    gap: 1.75rem;
+
+    width: 95.5rem;
+    height: 23.50rem;
+
+    margin: 0 auto;
+}
+
+.iconLeft, .iconRight  {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.iconLeft {
+    margin-top: 6.875rem;
+}
+
+.iconRight {
+    margin-top: 6.875rem;
+}

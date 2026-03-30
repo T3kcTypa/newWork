@@ -1,0 +1,4 @@
+.scrollPrice {
+    font: var(--text-Newprice);
+    color: var(--color-primary-red);
+}
