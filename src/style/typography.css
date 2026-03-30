@@ -40,5 +40,19 @@
 
     /*Title*/
     --text-title: var(--fw-bold) 3rem/1.20 var(--font-accent);
+    /**/
 
+    /*PromoSection*/
+    /*Button*/
+    --text-promoButton: var(--fw-medium) 1rem/1.25 var(--font-accent);
+    /**/
+    /*Title*/
+    --text-promoTitle: var(--fw-semibold) 2rem/1.25 var(--font-accent);
+    --text-promoTitleSecond: var(--fw-medium) 3rem/1.25 var(--font-accent);
+    /**/
+    /*Text*/
+    --text-promoText: var(--fw-regular) 1rem/1.50 var(--font-secondary);
+    --text-promoTextSecond: var(--fw-light) 1.5rem/1.25 var(--font-accent);
+    /**/
+    /*PromoSection End*/
 }

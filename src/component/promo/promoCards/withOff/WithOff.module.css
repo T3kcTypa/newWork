@@ -1,0 +1,7 @@
+.with {
+    grid-area: with;
+    border-radius: 1rem;
+    width: 35.44rem;
+    height: 19.63rem;
+    background-color: var(--color-gray-300);
+}

@@ -6,9 +6,9 @@ type TextProps = {
   children: React.ReactNode
 }
 
-export const Text = ({ children }: TextProps) => {
+export const Text = ({ children, style }: TextProps) => {
   return (
-    <div className={s.text}>
+    <div className={s.text} style={style}>
       <p>{children}</p>
     </div>
   );

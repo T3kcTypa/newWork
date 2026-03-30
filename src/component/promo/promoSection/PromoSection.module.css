@@ -1,0 +1,13 @@
+.promo {
+    display: grid;
+    grid-template-areas:
+            "soft creative creative"
+            "soft with toy";
+    grid-row-gap: 1.75rem;
+    grid-column-gap: 1.75rem;
+    width: 87.5rem;
+    height: 41rem;
+
+    margin: 5rem auto;
+
+}

@@ -1,0 +1,7 @@
+.toy {
+    grid-area: toy;
+    border-radius: 1rem;
+    width: 20.56rem;
+    height: 19.63rem;
+    background-color: var(--color-gray-300);
+}

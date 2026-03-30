@@ -1,0 +1,7 @@
+.creative {
+    grid-area: soft;
+    border-radius: 1rem;
+    width: 28rem;
+    height: 41rem;
+    background-color: var(--color-gray-300);
+}
