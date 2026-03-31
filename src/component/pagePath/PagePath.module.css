@@ -1,0 +1,24 @@
+.nav {
+    width: 16.94rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+
+    font-family:var(--font-secondary), sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+    color:var(--color-gray-700) ;
+}
+
+.nav span:nth-child(2){
+    width: 17px;
+    height: 17px;
+}
+
+.nav span:nth-child(4) {
+    width: 17px;
+    height: 17px;
+}

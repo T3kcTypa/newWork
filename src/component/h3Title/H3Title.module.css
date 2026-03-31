@@ -11,4 +11,6 @@
     height: 4.56rem;
 
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }

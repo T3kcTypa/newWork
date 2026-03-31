@@ -6,8 +6,8 @@
     padding-top: 5rem;
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     gap: 2.1875rem;
-    margin-bottom: 5rem;
 }
 
 .saleTitle {

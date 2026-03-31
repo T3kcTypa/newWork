@@ -11,9 +11,10 @@
 }
 
 .container {
-    width: 87.5rem;
-    height: 7.5625rem;
+    max-width: 90rem;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .logoMenu, .search, .categories, .menu, .heart, .cart, .woman, .categoriesArrow  {
@@ -25,24 +26,26 @@
     height: 3rem;
     padding-top: 1.0625rem;
     margin-right: 9.3125rem;
+    flex-shrink: 0;
 }
 
-input {
+.search input {
     all: unset;
-    flex: 1;
-    display: block;
     margin-left: 1.5rem;
 }
 
+
 .search {
+    display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-top: 1rem;
     border-radius: 7.5rem;
-    width: 43.69rem;
+    width: 100%;
+    max-width: 43.69rem;
     height: 3rem;
     background-color: #F1F5F9;
 }
-
 .categories {
     width: 12.8125rem;
     height: 1.75rem;
@@ -64,10 +67,11 @@ input {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 18.625rem;
-    height: 1.5rem;
-    margin-left: 2.375rem;
+    width: 100%;
+    max-width: 18.625rem;
+    margin-left: 1.5rem;
     margin-top: 1.75rem;
+    flex-shrink: 0;
 }
 
 .heart, .cart, .woman {
@@ -100,10 +104,11 @@ input {
 }
 
 .naviBlock {
-    width: 87.88rem;
-    height: 1.75rem;
+    display: flex;
+    width: 100%;
     align-items: center;
     margin-top: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 .burgerMenu {
@@ -123,12 +128,13 @@ input {
 }
 
 .navi {
-    width: 27.8125rem;
+    width: 100%;
+    max-width: 27.8125rem;
     height: 1.25rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 27.75rem;
+    margin-right: auto;
 }
 
 .order {

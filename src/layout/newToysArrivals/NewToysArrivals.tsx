@@ -10,16 +10,43 @@ export const NewToysArrivals = () => {
   return (
     <div className={s.container}>
       <H3Tittle>New Toy Arrivals</H3Tittle>
-      <div className={s.cardFLex}>
-        <div className={s.iconLeft}>
-          <Icon id="arrowLeftCircleFill" color='red' width="2.125rem" height="2.125rem"/>
+
+      <div className={s.sliderWrapper}>
+        <button className={s.iconLeft}>
+          <Icon id="arrowLeftCircleFill" color="red" width="2.125rem" height="2.125rem" />
+        </button>
+
+        <div className={s.cardFlex}>
+          {Toys.map((toy) => (
+            <ScrollSection
+              key={toy.id}
+              title={toy.title}
+              image={toy.image}
+              price={toy.price}
+            />
+          ))}
         </div>
-        {Toys.map((toy) => <ScrollSection key={toy.id} title={toy.title} image={toy.image} price={toy.price} />)}
-        <div className={s.iconRight}>
-          <Icon id="arrowRightCircleFill" color='red' width="2.125rem" height="2.125rem"/>
-        </div>
+
+        <button className={s.iconRight}>
+          <Icon id="arrowRightCircleFill" color="red" width="2.125rem" height="2.125rem" />
+        </button>
       </div>
-      <ProductScroll/>
+
+      <ProductScroll />
     </div>
+    // <div className={s.container}>
+    //   <H3Tittle>New Toy Arrivals</H3Tittle>
+    //   <div className={s.cardFLex}>
+    //     <div className={s.iconLeft}>
+    //       <Icon id="arrowLeftCircleFill" color='red' width="2.125rem" height="2.125rem"/>
+    //     </div>
+    //     {Toys.map((toy) => <ScrollSection key={toy.id} title={toy.title} image={toy.image} price={toy.price} />)}
+    //     <div className={s.iconRight}>
+    //       <Icon id="arrowRightCircleFill" color='red' width="2.125rem" height="2.125rem"/>
+    //     </div>
+    //   </div>
+    //   <ProductScroll/>
+    // </div>
   );
 };
+
