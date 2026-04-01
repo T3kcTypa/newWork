@@ -9,6 +9,7 @@
 
 
 .simpleScroll {
+    border:none;
     border-radius: 7.5rem;
     width: 0.75rem;
     height: 0.75rem;
@@ -16,6 +17,7 @@
 }
 
 .activeScroll {
+    border:none;
     border-radius: 7.5rem;
     width: 2.25rem;
     height: 0.75rem;

@@ -26,7 +26,6 @@ export const FilterCategories = () => {
       <div className={s.items}>
         {categories.map((item) => (
           <label key={item.id}>
-            <input type="checkbox" />
             {item.label}
           </label>
         ))}

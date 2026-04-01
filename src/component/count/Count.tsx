@@ -10,15 +10,15 @@ type CountProps = {
 export const Count = ({ style } : CountProps) => {
   return (
     <div className={s.Count} style={style}>
-        <span>
+        <button className={s.button}>
           <Icon id="minus" color="#1C274C"/>
-        </span>
+        </button>
         <span>
           0
         </span>
-        <span>
+        <button className={s.button}>
           <Icon id="plus" color="#1C274C"/>
-        </span>
+        </button>
     </div>
   );
 };

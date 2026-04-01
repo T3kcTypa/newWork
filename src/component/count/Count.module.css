@@ -38,3 +38,9 @@
 .Count::after {
     left: 66.66%;
 }
+
+.button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}

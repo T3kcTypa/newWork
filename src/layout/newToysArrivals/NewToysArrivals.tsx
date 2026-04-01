@@ -10,12 +10,10 @@ export const NewToysArrivals = () => {
   return (
     <div className={s.container}>
       <H3Tittle>New Toy Arrivals</H3Tittle>
-
       <div className={s.sliderWrapper}>
         <button className={s.iconLeft}>
           <Icon id="arrowLeftCircleFill" color="red" width="2.125rem" height="2.125rem" />
         </button>
-
         <div className={s.cardFlex}>
           {Toys.map((toy) => (
             <ScrollSection
@@ -26,12 +24,10 @@ export const NewToysArrivals = () => {
             />
           ))}
         </div>
-
         <button className={s.iconRight}>
           <Icon id="arrowRightCircleFill" color="red" width="2.125rem" height="2.125rem" />
         </button>
       </div>
-
       <ProductScroll />
     </div>
     // <div className={s.container}>
