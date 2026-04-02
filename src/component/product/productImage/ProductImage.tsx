@@ -3,12 +3,18 @@ import { ProductSales } from "../productSales/ProductSales.tsx";
 import { Wish } from "../../wish/Wish.tsx";
 import { Count } from "../../count/Count.tsx";
 import { Button } from "../../button/Button.tsx";
-
-export const ProductImage = () => {
+export type ProductImageProps = {
+  image: string;
+  title: string;
+}
+export const ProductImage = ( { image, title = 'Product image' } : ProductImageProps) => {
   return (
     <div className={style.productImage}>
+      <img className={style.image} src={image} alt={title} />
       <ProductSales/>
-      <Wish/>
+      <Wish style={{
+        marginTop: '-0.3rem'
+      }}/>
       <Count/>
       <Button style={{
         position: "absolute",
@@ -20,7 +26,6 @@ export const ProductImage = () => {
         font: "var(--text-button)",
         color: "var(--color-primary-white)",
       }}>Add To Cart</Button>
-      {/*<img src="#" alt="#" />*/}
     </div>
   );
 };

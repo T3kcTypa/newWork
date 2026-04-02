@@ -2,17 +2,19 @@ import s from "./Price.module.css"
 import React from "react";
 
 type PriceProps = {
-      style?: React.CSSProperties
+      style?: React.CSSProperties;
+      oldPrice?: number;
+      price: number;
 }
 
-export const Price = ( { style } : PriceProps) => {
+export const Price = ( { style, price, oldPrice } : PriceProps) => {
   return (
     <div className={s.price} style={style}>
         <span className={s.newPrice}>
-          $19
+          ${price}
         </span>
         <span className={s.oldPrice}>
-          $24
+          ${oldPrice}
         </span>
     </div>
   );

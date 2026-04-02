@@ -1,0 +1,32 @@
+.row {
+    all: unset;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+}
+
+.circle {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid #7d8ca3;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.circleActive {
+    border-color: #00bcd4;
+    position: relative;
+}
+
+.circleActive::after {
+    content: "";
+    position: absolute;
+    inset: 0.28rem;
+    background-color: #00bcd4;
+    border-radius: 50%;
+}
+
+.label {
+    font-size: 1rem;
+}

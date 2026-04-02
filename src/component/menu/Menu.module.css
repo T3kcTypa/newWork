@@ -17,4 +17,5 @@
 
 .main {
     grid-area: menu;
+    grid-row: 1 / 3;
 }

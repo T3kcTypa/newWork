@@ -1,7 +1,7 @@
 import { Title } from "../../component/title/Title.tsx";
 import { ProductCard } from "../productCard/ProductCard.tsx";
 import s from "./SectionSales.module.css";
-
+import {product} from "../../data/Toys.ts";
 
 export const SaleSection = () => {
   return (
@@ -15,14 +15,9 @@ export const SaleSection = () => {
         }}>Sales Now On</Title>
       </div>
       <div className={s.saleGrid}>
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        {product.saleProductCard.map((item) => (
+          <ProductCard key={item.id} {...item} />
+        ))}
       </div>
     </div>
   );

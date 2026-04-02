@@ -7,6 +7,8 @@
     grid-template-areas:
             "menu Bg Bg"
             "card card card" ;
+    grid-template-columns: 245px 1fr;
+    grid-template-rows: auto 250px;
     grid-row-gap: 0.50rem;
     grid-column-gap: 1.65rem;
 }
