@@ -1,5 +1,5 @@
 import {product} from "../../data/Toys.ts";
-import {ProductCard} from "../../layout/productCard/ProductCard.tsx";
+import {ProductCard} from "../../component/product/productCard/ProductCard.tsx";
 import s from "./ProductList.module.css"
 export const ProductList = () => {
   return (

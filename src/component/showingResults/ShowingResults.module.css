@@ -1,0 +1,39 @@
+.showing {
+    max-width: 27.06rem;
+    width: 100%;
+    height: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: var(--font-secondary), sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-gray-700);
+}
+
+.button {
+    max-width: 11.25rem;
+    width: 100%;
+    height: 1.5rem;
+}
+
+.button button {
+    background: none;
+    border: none;
+    width: 2.8125rem;
+    height: 1.5rem;
+    border-left: 1px solid #eaeaea;
+
+    font-family: var(--font-secondary), sans-serif;
+    font-size: 1rem;
+    line-height: 150%;
+    font-weight: 400;
+    color: var(--color-gray-500);
+}
+
+.button button.active {
+    font-weight: var(--fw-semibold);
+    color: var(--color-primary-darkBlue);
+}

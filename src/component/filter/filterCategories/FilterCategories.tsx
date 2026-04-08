@@ -21,11 +21,11 @@ export const FilterCategories = () => {
   return (
     <div className={s.categories}>
       <div className={s.text}>
-        <Text>Categories</Text>
+        <Text style={{font: 'var(--text-categoriesTitle)', color: 'var(--color-gray-900);'}}>Categories</Text>
       </div>
       <div className={s.items}>
         {categories.map((item) => (
-          <label key={item.id}>
+          <label key={item.id} className={s.font}>
             {item.label}
           </label>
         ))}

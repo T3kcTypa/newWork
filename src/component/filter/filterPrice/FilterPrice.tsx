@@ -15,12 +15,12 @@ export const FilterPrice = () => {
   return (
     <div className={s.price}>
       <div className={s.text}>
-        <Text>Price</Text>
+        <Text style={{font: 'var(--text-categoriesTitle)', color: 'var(--color-gray-900);'}}>Price</Text>
       </div>
       <div className={s.items}>
         {prices.map((price) => (
           <label key={price.id}>
-            <input type="checkbox" />
+            <input type="checkbox" className={s.checkbox}/>
             {price.label}
           </label>
         ))}

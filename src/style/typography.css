@@ -55,4 +55,7 @@
     --text-promoTextSecond: var(--fw-light) 1.5rem/1.25 var(--font-accent);
     /**/
     /*PromoSection End*/
+
+    /*Categories Title*/
+    --text-categoriesTitle: var(--fw-medium) 1.5rem/1.25 var(--font-accent);
 }

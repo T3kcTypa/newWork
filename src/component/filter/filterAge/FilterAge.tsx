@@ -1,4 +1,4 @@
-import s from "../filterPrice/FilterPrice.module.css";
+import s from "./FilterAge.module.css";
 import { Text } from "../../text/Text.tsx";
 
 const Age = [
@@ -13,12 +13,12 @@ export const FilterAge = () => {
   return (
     <div className={s.age}>
       <div className={s.text}>
-        <Text>Age</Text>
+        <Text style={{font: 'var(--text-categoriesTitle)', color: 'var(--color-gray-900);'}}>Age</Text>
       </div>
       <div className={s.items}>
         {Age.map((age) => (
           <label key={age.id}>
-            <input type="checkbox" />
+            <input type="checkbox" className={s.checkbox} />
             {age.age}
           </label>
         ))}

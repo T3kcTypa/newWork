@@ -1,0 +1,29 @@
+.gender {
+    border-bottom: 1px solid #E2E8F0;
+    padding: 1.30rem 0 1rem;
+    max-width: 14.88rem;
+    width: 100%;
+    height: 10rem;
+}
+
+.text {
+    width: 13.38rem;
+    height: 1.5rem;
+    font-family: var(--font-accent), sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 120%;
+    color: var(--color-gray-900);
+    margin-bottom: 1rem;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-left: 1rem;
+}
+
+.checkbox {
+    margin-right: 0.5rem;
+}

@@ -1,6 +1,6 @@
-import { ProductImage } from "../../component/product/productImage/ProductImage.tsx";
+import { ProductImage } from "../productImage/ProductImage.tsx";
 import s from "./ProductCard.module.css"
-import { ProductCardBottom } from "../../component/product/productCardBottom/ProductCardBottom.tsx";
+import { ProductCardBottom } from "../productCardBottom/ProductCardBottom.tsx";
 import React from "react";
 
 export type ProductCardProps = {

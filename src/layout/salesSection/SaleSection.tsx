@@ -1,5 +1,5 @@
 import { Title } from "../../component/title/Title.tsx";
-import { ProductCard } from "../productCard/ProductCard.tsx";
+import { ProductCard } from "../../component/product/productCard/ProductCard.tsx";
 import s from "./SectionSales.module.css";
 import {product} from "../../data/Toys.ts";
 

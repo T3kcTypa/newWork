@@ -1,4 +1,4 @@
-import s from "../filterPrice/FilterPrice.module.css";
+import s from "./FilterGender.module.css";
 import { Text } from "../../text/Text.tsx";
 
 const filterGender = [
@@ -9,14 +9,14 @@ const filterGender = [
 
 export const Gender = () => {
   return (
-    <div className={s.price}>
+    <div className={s.gender}>
       <div className={s.text}>
-        <Text>Gender</Text>
+        <Text style={{font: 'var(--text-categoriesTitle)', color: 'var(--color-gray-900);'}}>Gender</Text>
       </div>
       <div className={s.items}>
         {filterGender.map((gender) => (
           <label key={gender.id}>
-            <input type="checkbox" />
+            <input type="checkbox" className={s.checkbox}/>
             {gender.gender}
           </label>
         ))}

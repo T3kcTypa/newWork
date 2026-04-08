@@ -1,0 +1,15 @@
+.title {
+    max-width: 69.75rem;
+    width: 100%;
+    height: 9.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.sort {
+    max-width: 69.69rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.875rem;
+}

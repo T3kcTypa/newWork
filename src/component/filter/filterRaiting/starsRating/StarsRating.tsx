@@ -1,3 +1,5 @@
+import { Icon } from "../../../icon/Icon.tsx";
+
 type StarsRatingProps = {
   value: number;
   max?: number;
@@ -11,7 +13,8 @@ export const StarsRating = ({ value, max = 5 }: StarsRatingProps) => {
 
         return (
           <span key={index} aria-hidden="true">
-            {isFilled ? "★" : "☆"}
+            {isFilled ? <Icon id='star-outline' color='var(--color-primary-yellow)'/>
+              : <Icon id='star-filled' color='var(--color-gray-300)'/>}
           </span>
         );
       })}
