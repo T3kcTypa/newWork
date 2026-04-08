@@ -3,6 +3,7 @@ import { ProductSales } from "../productSales/ProductSales.tsx";
 import { Wish } from "../../wish/Wish.tsx";
 import { Count } from "../../count/Count.tsx";
 import { Button } from "../../button/Button.tsx";
+
 export type ProductImageProps = {
   image: string;
   title: string;
