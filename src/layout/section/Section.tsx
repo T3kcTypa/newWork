@@ -24,7 +24,7 @@ export const Section = () => {
     <div className={style.main}>
       <Menu menuItem={menuItems} />
       <BackgroundSquare style={{
-        width: "70.13rem",
+        maxWidth: "70.13rem",
         height: "30.13rem",
         backgroundColor: "var(--color-gray-300)",
         borderRadius: "1rem",

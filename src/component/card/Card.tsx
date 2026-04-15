@@ -16,7 +16,8 @@ export const Card = ({ bgColor, image, imageStyle }: CardProps) => {
     <div className={style.card}>
       <CardBg style={{
         backgroundColor: bgColor,
-        width: "20rem",
+        maxWidth: "20rem",
+        width: "100%",
         height: "12.5rem",
         borderRadius: "1rem"
       }} />

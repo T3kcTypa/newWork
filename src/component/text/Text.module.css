@@ -2,3 +2,18 @@
     font: var(--text-productCard);
     color: var(--color-gray-900);
 }
+
+.instock {
+    color: var(--color-primary-darkBlue);
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: var(--font-secondary), sans-serif;
+}
+
+
+.outstock {
+    color: var(--color-gray-400);
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: var(--font-secondary), sans-serif;
+}
