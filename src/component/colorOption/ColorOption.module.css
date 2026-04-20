@@ -1,0 +1,22 @@
+.block {
+    max-width: 5.69rem;
+    max-height: 2.25rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text {
+    font-family: var(--font-secondary), sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 125%;
+    color: var(--color-gray-700)
+}
+
+.color {
+    border-radius: 0.25rem;
+    max-width: 2.25rem;
+    max-height: 2.25rem;
+}

@@ -1,11 +1,5 @@
 import React from "react";
-
-export const colors = [
-  { id: 1, name: "Cyan", color: "#1af4ad" },
-  { id: 4, name: "Blue", color: "#20c7f1" },
-  { id: 5, name: "Green", color: "#adf54f" },
-  { id: 6, name: "Brown", color: "#ffbc71" },
-];
+import s from "./ColorOption.module.css";
 
 export type ColorOptionProps = {
   name: string;
@@ -15,9 +9,9 @@ export type ColorOptionProps = {
 
 export const ColorOption = ({ name, color }: ColorOptionProps) => {
   return (
-    <div>
-      <p>{name}</p>
-      <div style={{ backgroundColor: color }}></div>
+    <div className={s.block}>
+      <p className={s.text}>{name}</p>
+      <div className={s.color} style={{ backgroundColor: color }}></div>
     </div>
   );
 };

@@ -1,7 +1,6 @@
 .container {
     max-width: 88.25rem;
     width: 100%;
-    height: 148.13rem;
     padding: 0 0.375rem;
 
     margin: 0 auto;
@@ -13,7 +12,6 @@
 }
 
 .title {
-    min-height: 171.375rem;
     max-width: 69.75rem;
     width: 100%;
     margin-top:2.375rem;
