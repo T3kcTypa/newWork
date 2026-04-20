@@ -36,12 +36,26 @@
 
 @media (max-width: 48rem) {
     .thumbButton {
-        height: 5rem;
-        border-radius: 1rem;
-        padding: 0.625rem;
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 0.875rem;
+        padding: 0.25rem;
     }
 
     .thumbImage {
         border-radius: 0.625rem;
+    }
+}
+
+@media (max-width: 30rem) {
+    .thumbButton {
+        width: 3.25rem;
+        height: 3.25rem;
+        border-radius: 0.875rem;
+        padding: 0.25rem;
+    }
+
+    .thumbImage {
+        border-radius: 0.5rem;
     }
 }

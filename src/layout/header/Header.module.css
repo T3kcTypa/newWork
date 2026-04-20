@@ -25,7 +25,7 @@
     width: 13.5rem;
     height: 3rem;
     padding-top: 1.0625rem;
-    margin-right: 9.3125rem;
+    margin-right: clamp(1rem, 4vw, 9.3125rem);
     flex-shrink: 0;
 }
 
@@ -46,6 +46,7 @@
     height: 3rem;
     background-color: #F1F5F9;
 }
+
 .categories {
     width: 12.8125rem;
     height: 1.75rem;
@@ -154,3 +155,148 @@
 }
 
 /*header navigation ended*/
+
+@media (max-width: 75rem) {
+    .logo {
+        margin-right: 2rem;
+    }
+
+    .search {
+        max-width: 100%;
+    }
+
+    .menu {
+        margin-left: 1rem;
+    }
+
+    .burgerMenu {
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width: 62rem) {
+    .logoMenu {
+        flex-wrap: wrap;
+        row-gap: 1rem;
+        align-items: center;
+    }
+
+    .logo {
+        margin-right: 0;
+        padding-top: 0.75rem;
+    }
+
+    .search {
+        order: 3;
+        flex-basis: 100%;
+        margin-top: 0;
+    }
+
+    .menu {
+        margin-top: 0.75rem;
+        margin-left: auto;
+    }
+
+    .naviBlock {
+        flex-wrap: wrap;
+        gap: 0.875rem 1rem;
+    }
+
+    .naviLine {
+        display: none;
+    }
+
+    .burgerMenu {
+        margin-right: 0;
+    }
+
+    .navi {
+        order: 3;
+        max-width: 100%;
+        flex-basis: 100%;
+        justify-content: flex-start;
+        gap: 1.25rem;
+        flex-wrap: wrap;
+    }
+
+    .order {
+        width: auto;
+    }
+
+    .language {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 48rem) {
+    .container {
+        padding: 0 0.875rem;
+    }
+
+    .headerLine {
+        height: 0.75rem;
+    }
+
+    .logo {
+        width: auto;
+        height: auto;
+        max-width: 11rem;
+    }
+
+    .search {
+        height: 2.75rem;
+        padding-right: 0.75rem;
+    }
+
+    .search input {
+        margin-left: 1rem;
+        min-width: 0;
+    }
+
+    .categories {
+        width: auto;
+        margin-right: 0;
+        gap: 0.5rem;
+    }
+
+    .categoriesArrow {
+        width: auto;
+        margin-right: 0;
+    }
+
+    .menu {
+        max-width: none;
+        width: auto;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .heart,
+    .cart,
+    .woman,
+    .burgerMenu,
+    .language {
+        width: auto;
+        gap: 0.375rem;
+    }
+}
+
+@media (max-width: 30rem) {
+    .container {
+        padding: 0 0.75rem;
+    }
+
+    .logoMenu {
+        gap: 0.75rem;
+    }
+
+    .menu {
+        justify-content: flex-start;
+    }
+
+    .naviBlock {
+        margin-top: 0.75rem;
+        margin-bottom: 0.5rem;
+    }
+}

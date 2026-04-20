@@ -15,7 +15,7 @@
 }
 
 .container {
-    width: 90rem;
+    width: min(90rem, 100%);
     margin: 0 auto;
     padding: 0 1.25rem;
 }
@@ -107,4 +107,41 @@
     border-radius: 0.4rem;
     background: rgba(255, 255, 255, 0.12);
     font-size: 0.75rem;
+}
+
+@media (max-width: 75rem) {
+    .footerTop {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .footerBrand {
+        max-width: none;
+    }
+}
+
+@media (max-width: 48rem) {
+    .footer {
+        padding: 2.25rem 0 1.25rem;
+        margin-top: 3rem;
+    }
+
+    .container {
+        padding: 0 0.875rem;
+    }
+
+    .footerTop {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .footerLogo {
+        width: auto;
+        max-width: 100%;
+        font-size: 1.75rem;
+    }
+
+    .footerBottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

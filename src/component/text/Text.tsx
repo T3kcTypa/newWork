@@ -7,9 +7,9 @@ type TextProps = {
   variant?: "instock" | "outstock"
 }
 
-export const Text = ({ children, style, variant = 'instock' }: TextProps) => {
+export const Text = ({ children, style, variant }: TextProps) => {
   return (
-    <div className={`${s.text} ${s[variant]}`} style={style}>
+    <div className={`${s.text} ${variant ? s[variant] : ""}`.trim()} style={style}>
       <p>{children}</p>
     </div>
   );

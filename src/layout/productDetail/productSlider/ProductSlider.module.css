@@ -44,14 +44,40 @@
 @media (max-width: 48rem) {
     .slider {
         align-items: stretch;
+        gap: 0.5rem;
     }
 
     .galleryList {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: none;
+        grid-auto-flow: column;
+        grid-auto-columns: 3.5rem;
+        gap: 1rem;
+        overflow-x: auto;
+        padding-bottom: 0.125rem;
+        scrollbar-width: none;
+    }
+
+    .galleryList::-webkit-scrollbar {
+        display: none;
+    }
+
+    .arrowWrap {
+        display: none;
     }
 
     .arrowButton {
         width: 2.5rem;
         height: 2.5rem;
+    }
+}
+
+@media (max-width: 30rem) {
+    .slider {
+        gap: 0.5rem;
+    }
+
+    .galleryList {
+        gap: 0.75rem;
+        grid-auto-columns: 3.25rem;
     }
 }

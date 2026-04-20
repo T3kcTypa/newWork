@@ -5,7 +5,7 @@ export const ProductList = () => {
   return (
     <div className={s.list}>
       {product.productCard.map((item) => (
-        <ProductCard style={{width: '16rem'}} key={item.id} {...item} />
+        <ProductCard key={item.id} {...item} />
       ))}
     </div>
   );

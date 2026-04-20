@@ -68,3 +68,41 @@
 .iconRight {
     right: -0.5rem;
 }
+
+@media (max-width: 75rem) {
+    .container {
+        padding-inline: 1rem;
+        margin: 3rem auto;
+    }
+
+    .cardFlex {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 56rem) {
+    .cardFlex {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.25rem;
+    }
+
+    .iconLeft {
+        left: 0;
+    }
+
+    .iconRight {
+        right: 0;
+    }
+}
+
+@media (max-width: 30rem) {
+    .container {
+        padding-inline: 0.75rem;
+        margin: 2rem auto;
+    }
+
+    .cardFlex {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}

@@ -1,10 +1,10 @@
 .container {
-    max-width: 88.25rem;
+    max-width: 90rem;
     width: 100%;
-
     margin: 0 auto;
+    padding-inline: clamp(1rem, 2vw, 1.5rem);
     display: grid;
-    grid-template-columns: minmax(0, 50.31rem) minmax(20rem, 1fr);
+    grid-template-columns: minmax(0, 1.08fr) minmax(22rem, 0.92fr);
     grid-template-areas: 'image info'
                             'description description';
     column-gap: 2rem;
@@ -20,9 +20,11 @@
 }
 
 .imageMain {
-    width: 50.31rem;
-    max-width: 100%;
-    height: 35.31rem;
+    width: 100%;
+    max-width: 50.31rem;
+    aspect-ratio: 50.31 / 35.31;
+    min-height: 0;
+    height: auto;
     border: 0.0625rem solid var(--color-gray-200);
     border-radius: 2rem;
     background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
@@ -50,15 +52,183 @@
 .info {
     max-width: 35.94rem;
     width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
 
     grid-area: info;
+}
+
+.infoTitle {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.infoBlock {
+    margin-top: 1.5rem;
+}
+
+.infoSale {
+    width: fit-content;
+    min-height: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+}
+
+.infoWall {
+    width: 0.06rem;
+    height: 1.38rem;
+    background: #eaeaea;
+}
+
+.infoRating {
+    width: fit-content;
+    min-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+    flex-wrap: wrap;
+}
+
+.optionSection {
+    display: grid;
+    grid-template-columns: 4.5rem 1fr;
+    align-items: start;
+    column-gap: 1.5rem;
+}
+
+.optionHeader {
+    display: flex;
+    align-items: center;
+    min-height: 2.75rem;
+}
+
+.optionLabel {
+    font-family: var(--font-secondary), sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: var(--color-gray-900);
+}
+
+.optionList {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    min-height: 2.75rem;
+}
+
+.quantityWrap {
+    min-height: 2.75rem;
+    display: flex;
+    align-items: center;
+}
+
+.actionsSection {
+    width: 100%;
+}
+
+.actionsRow {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 0.4375rem;
+    justify-content: flex-start;
+}
+
+.productActionButton {
+    width: 17.75rem;
+    max-width: 100%;
+    height: 3rem;
+    flex: 0 1 17.75rem;
+    background-color: var(--color-primary-red);
+    color: var(--color-primary-white);
+    border: 0.0625rem solid var(--color-primary-red);
+}
+
+.productActionButton:active {
+    background-color: var(--color-primary-white);
+    color: var(--color-primary-red);
+    border-color: var(--color-primary-red);
+    box-shadow: none;
 }
 
 .description {
     max-width: 87.5rem;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 
     grid-area: description;
+}
+
+.descriptionSection {
+    padding: 2rem;
+    border: 0.0625rem solid var(--color-gray-200);
+    border-radius: 1.5rem;
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    box-shadow: 0 1rem 2.5rem rgba(15, 23, 42, 0.06);
+}
+
+.specificationList {
+    list-style: none;
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.875rem;
+}
+
+.specificationItem {
+    min-height: 4.75rem;
+    padding: 0.875rem 1rem;
+    border: 0.0625rem solid var(--color-gray-200);
+    border-radius: 1rem;
+    background: var(--color-primary-white);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.375rem;
+    box-shadow: 0 0.5rem 1.25rem rgba(15, 23, 42, 0.04);
+    min-width: 0;
+}
+
+.specificationLabel {
+    font-family: var(--font-ui), sans-serif;
+    font-weight: 500;
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    line-height: 1.25;
+    color: var(--color-gray-500);
+    white-space: nowrap;
+}
+
+.specificationLabel::after {
+    content: ":";
+    margin-left: 0.125rem;
+}
+
+.specificationValue {
+    font-family: var(--font-secondary), sans-serif;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    line-height: 1.25;
+    color: var(--color-gray-900);
+    white-space: nowrap;
+    min-width: 0;
+}
+
+.descriptionText {
+    margin-top: 1.5rem;
+    font-family: var(--font-secondary), sans-serif;
+    font-weight: 400;
+    font-size: 1.0625rem;
+    line-height: 1.85;
+    letter-spacing: 0.01em;
+    color: var(--color-gray-700);
 }
 
 @media (max-width: 75rem) {
@@ -74,12 +244,72 @@
     .description {
         max-width: 100%;
     }
+
+    .image {
+        max-width: none;
+    }
+
+    .imageMain {
+        max-width: none;
+    }
+
+    .actionsRow {
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    .productActionButton {
+        flex: 1 1 17rem;
+    }
+}
+
+@media (min-width: 36rem) and (max-width: 56rem) {
+    .container {
+        row-gap: 2rem;
+    }
+
+    .imageMain {
+        aspect-ratio: 1.28 / 1;
+    }
+
+    .optionSection {
+        grid-template-columns: 5rem 1fr;
+        column-gap: 1rem;
+    }
+
+    .actionsRow {
+        flex-wrap: nowrap;
+        gap: 0.625rem;
+    }
+
+    .productActionButton {
+        flex: 1 1 0;
+        width: auto;
+    }
+}
+
+@media (min-width: 48rem) and (max-width: 68rem) {
+    .container {
+        padding-inline: 1.25rem;
+    }
+
+    .descriptionSection {
+        padding: 1.5rem;
+    }
+
+    .specificationList {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 @media (max-width: 48rem) {
+    .container {
+        padding-inline: 0.875rem;
+        row-gap: 2rem;
+    }
+
     .imageMain {
         width: 100%;
-        height: auto;
         aspect-ratio: 50.31 / 35.31;
         border-radius: 1.25rem;
         padding: 0.75rem;
@@ -87,5 +317,85 @@
 
     .imageMain img {
         border-radius: 1rem;
+    }
+
+    .optionSection {
+        grid-template-columns: 1fr;
+        row-gap: 0.75rem;
+    }
+
+    .optionHeader,
+    .optionList,
+    .quantityWrap {
+        min-height: auto;
+    }
+
+    .descriptionSection {
+        padding: 1.25rem;
+        border-radius: 1.25rem;
+    }
+
+    .specificationList {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .specificationItem {
+        min-height: 4.25rem;
+        padding: 0.75rem 0.875rem;
+    }
+
+    .actionsRow {
+        flex-wrap: nowrap;
+        gap: 0.625rem;
+    }
+
+    .productActionButton {
+        width: auto;
+        min-width: 0;
+        flex: 1 1 0;
+        height: 3rem;
+    }
+}
+
+@media (max-width: 30rem) {
+    .container {
+        padding-inline: 0.75rem;
+        row-gap: 1.5rem;
+    }
+
+    .infoTitle {
+        margin-top: 0.75rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .infoBlock {
+        margin-top: 1.25rem;
+    }
+
+    .optionList {
+        gap: 0.5rem;
+    }
+
+    .description {
+        gap: 1.5rem;
+    }
+
+    .descriptionSection {
+        padding: 1rem;
+    }
+
+    .specificationList {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .specificationItem {
+        min-height: 4rem;
+        padding: 0.75rem;
+    }
+
+    .specificationLabel,
+    .specificationValue {
+        white-space: normal;
     }
 }

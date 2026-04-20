@@ -5,9 +5,41 @@
             "soft with toy";
     grid-row-gap: 1.75rem;
     grid-column-gap: 1.75rem;
-    width: 87.5rem;
-    height: 41rem;
+    width: min(87.5rem, 100%);
+    min-height: 41rem;
 
     margin: 5rem auto;
 
+}
+
+@media (max-width: 75rem) {
+    .promo {
+        width: calc(100% - 2rem);
+    }
+}
+
+@media (max-width: 62rem) {
+    .promo {
+        grid-template-areas:
+            "soft soft"
+            "creative creative"
+            "with toy";
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        min-height: auto;
+        margin: 3rem auto;
+    }
+}
+
+@media (max-width: 30rem) {
+    .promo {
+        grid-template-areas:
+            "soft"
+            "creative"
+            "with"
+            "toy";
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        width: calc(100% - 1.5rem);
+        margin: 2rem auto;
+    }
 }

@@ -1,8 +1,8 @@
 .main {
     padding-top: 1rem;
     margin: 0 auto;
-    width: 87.5rem;
-    height: 48.13rem;
+    width: min(87.5rem, 100%);
+    min-height: 48.13rem;
     display: grid;
     grid-template-areas:
             "menu Bg Bg"
@@ -11,4 +11,29 @@
     grid-template-rows: auto 250px;
     grid-row-gap: 0.50rem;
     grid-column-gap: 1.65rem;
+}
+
+@media (max-width: 75rem) {
+    .main {
+        width: calc(100% - 2rem);
+    }
+}
+
+@media (max-width: 62rem) {
+    .main {
+        grid-template-areas:
+            "menu"
+            "Bg"
+            "card";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        min-height: auto;
+    }
+}
+
+@media (max-width: 30rem) {
+    .main {
+        width: calc(100% - 1.5rem);
+        gap: 1rem;
+    }
 }

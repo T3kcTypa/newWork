@@ -4,12 +4,13 @@ import React from "react";
 
 
 type CountProps = {
+  className?: string
   style?: React.CSSProperties
 }
 
-export const Count = ({ style } : CountProps) => {
+export const Count = ({ className = "", style } : CountProps) => {
   return (
-    <div className={s.Count} style={style}>
+    <div className={`${s.Count} ${className}`.trim()} style={style}>
         <button className={s.button}>
           <Icon id="minus" color="#1C274C"/>
         </button>

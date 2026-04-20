@@ -9,6 +9,7 @@
 .flex {
     display: flex;
     justify-content: space-between;
+    gap: 1.5rem;
 }
 
 .title {
@@ -20,7 +21,42 @@
 .filter {
     max-width: 14.88rem;
     width: 100%;
-    height: 94rem;
     margin-top:2.375rem;
     border-right: 1px solid var(--color-gray-200);
+}
+
+@media (max-width: 75rem) {
+    .flex {
+        flex-direction: column;
+    }
+
+    .title,
+    .filter {
+        max-width: 100%;
+    }
+
+    .filter {
+        border-right: none;
+        border-bottom: 1px solid var(--color-gray-200);
+        padding-bottom: 1rem;
+    }
+}
+
+@media (max-width: 48rem) {
+    .container {
+        padding: 0 0.875rem;
+    }
+
+    .flex {
+        gap: 0;
+    }
+
+    .title,
+    .filter {
+        margin-top: 0.5rem;
+    }
+
+    .filter {
+        display: none;
+    }
 }

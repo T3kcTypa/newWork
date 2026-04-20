@@ -1,6 +1,18 @@
 .container {
-    max-width: 88.25rem;
+    max-width: 90rem;
     width: 100%;
-
     margin: 0 auto;
+    padding-inline: clamp(1rem, 2vw, 1.5rem);
+}
+
+@media (max-width: 48rem) {
+    .container {
+        padding-inline: 0.875rem;
+    }
+}
+
+@media (max-width: 30rem) {
+    .container {
+        padding-inline: 0.75rem;
+    }
 }

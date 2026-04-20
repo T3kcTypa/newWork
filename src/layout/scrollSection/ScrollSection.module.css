@@ -8,14 +8,40 @@
 }
 
 .scrollContainer {
-    width: 87.5rem;
-    height: 22.63rem;
+    width: min(87.5rem, 100%);
+    min-height: 22.63rem;
     margin: 0 auto;
 }
 
 .scrollSectionContainer {
-    width: 95.5rem;
-    height: 22.63rem;
+    width: min(95.5rem, 100%);
+    min-height: 22.63rem;
     display: flex;
     align-items: center;
+}
+
+@media (max-width: 75rem) {
+    .scrollSectionContainer {
+        padding-inline: 1rem;
+    }
+
+    .scrollSection {
+        width: auto;
+        max-width: 18.56rem;
+    }
+}
+
+@media (max-width: 48rem) {
+    .scrollSectionContainer {
+        min-height: auto;
+        padding-inline: 0.875rem;
+    }
+
+    .scrollContainer {
+        min-height: auto;
+    }
+
+    .scrollSection {
+        margin-top: 0.75rem;
+    }
 }
