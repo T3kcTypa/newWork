@@ -8,8 +8,17 @@ type ButtonProps = {
 }
 
 export const Button = ({ className = "", style, children } : ButtonProps) => {
+  const { backgroundColor, color, ...restStyle } = style ?? {};
+  const accentColor = backgroundColor ?? "var(--color-primary-red)";
+  const textColor = color ?? "var(--color-primary-white)";
+  const buttonStyle = {
+    "--button-accent": accentColor,
+    "--button-text": textColor,
+    ...restStyle,
+  } as React.CSSProperties;
+
   return (
-    <button style={style} className={`${s.buttonStyle} ${className}`.trim()}>
+    <button style={buttonStyle} className={`${s.buttonStyle} ${className}`.trim()}>
       {children}
     </button>
   );

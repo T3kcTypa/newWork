@@ -21,6 +21,10 @@
     display: flex;
 }
 
+.logoMenu {
+    justify-content: space-between;
+}
+
 .logo {
     width: 13.5rem;
     height: 3rem;
@@ -146,13 +150,14 @@
 }
 
 .language {
-    width: 4.94rem;
+    width: 5.5rem;
     height: 1.25rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-left: 1.875rem;
 }
+
 
 /*header navigation ended*/
 

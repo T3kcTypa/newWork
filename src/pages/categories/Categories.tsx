@@ -10,13 +10,15 @@ import s from "./Categories.module.css";
 import { ProductTitle } from "../../layout/productTitle/ProductTitle.tsx";
 import { Pagination } from "../../component/pagination/Pagination.tsx";
 import { Footer } from "../../layout/footer/Footer.tsx";
-import { paths } from "../../data/PathData.ts"
+import { paths } from "../../data/PathData.ts";
+import { Container } from "../../component/container/Container.tsx";
 
 export const Categories = () => {
   return (
     <div>
       <Header />
-      <div className={s.container}>
+      {/*<div className={s.container}>*/}
+      <Container>
         <PagePath paths={paths.categories} />
         <div className={s.flex}>
           <div className={s.filter}>
@@ -32,7 +34,8 @@ export const Categories = () => {
             <Pagination />
           </div>
         </div>
-      </div>
+      </Container>
+      {/*</div>*/}
       <Footer />
     </div>
   );

@@ -1,4 +1,3 @@
-import s from "../../App.module.css";
 import { Section } from "../../layout/section/Section.tsx";
 import { SaleSection } from "../../layout/salesSection/SaleSection.tsx";
 import { NewToysArrivals } from "../../layout/newToysArrivals/NewToysArrivals.tsx";
@@ -8,12 +7,13 @@ import { Animal } from "../../layout/animal/Animal.tsx";
 import { Block } from "../../layout/block/Block.tsx";
 import { Footer } from "../../layout/footer/Footer.tsx";
 import { Header } from "../../layout/header/header.tsx";
+import { Container } from "../../component/container/Container.tsx";
 
 export const Home = () => {
   return (
     <div>
       <Header />
-      <div className={s.container}>
+      <Container>
         <Section />
         <SaleSection />
         <NewToysArrivals />
@@ -21,8 +21,8 @@ export const Home = () => {
         <Set />
         <Animal />
         <Block />
-      </div>
-      <Footer/>
+      </Container>
+      <Footer />
     </div>
   );
 };

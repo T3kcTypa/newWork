@@ -1,0 +1,334 @@
+.page {
+    background: var(--color-primary-white);
+}
+
+.main {
+    padding-top: 1rem;
+}
+
+.titleWrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.375rem;
+    margin-bottom: 2rem;
+}
+
+.title {
+    font: var(--text-title);
+    color: var(--color-primary-darkBlue);
+    text-align: center;
+}
+
+.checkoutGrid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(20rem, 25.5rem);
+    gap: 2rem;
+    align-items: start;
+}
+
+.details,
+.order {
+    border: 0.0625rem solid var(--color-gray-200);
+    border-radius: 1rem;
+    background: var(--color-primary-white);
+}
+
+.details {
+    padding: 1.5rem;
+}
+
+.order {
+    position: sticky;
+    top: 1rem;
+    padding: 1.5rem;
+}
+
+.sectionHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+    margin-bottom: 1.5rem;
+}
+
+.sectionHeader h2 {
+    font: var(--text-promoTitle);
+    color: var(--color-gray-900);
+}
+
+.step {
+    width: 2.25rem;
+    height: 2.25rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e8f8fa;
+    font-family: var(--font-secondary), sans-serif;
+    font-weight: var(--fw-semibold);
+    color: var(--color-primary-darkBlue);
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+}
+
+.fieldGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 0;
+}
+
+.fieldGroup label {
+    font-family: var(--font-secondary), sans-serif;
+    font-weight: var(--fw-semibold);
+    font-size: 0.9375rem;
+    line-height: 1.4;
+    color: var(--color-gray-900);
+}
+
+.fieldGroup input,
+.fieldGroup textarea {
+    width: 100%;
+    border: 0.0625rem solid var(--color-gray-200);
+    border-radius: 0.75rem;
+    background: var(--color-gray-50);
+    padding: 0 1rem;
+    font-family: var(--font-secondary), sans-serif;
+    font-size: 1rem;
+    color: var(--color-gray-900);
+    outline: none;
+}
+
+.fieldGroup input {
+    height: 3rem;
+}
+
+.fieldGroup textarea {
+    min-height: 7.5rem;
+    padding-top: 1rem;
+    resize: vertical;
+}
+
+.fieldGroup input:focus,
+.fieldGroup textarea:focus {
+    border-color: var(--color-primary-darkBlue);
+    background: var(--color-primary-white);
+}
+
+.fullWidth {
+    grid-column: 1 / -1;
+}
+
+.payment {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 0.0625rem solid var(--color-gray-200);
+}
+
+.paymentOption {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.875rem;
+    padding: 1rem;
+    border: 0.0625rem solid var(--color-gray-200);
+    border-radius: 0.75rem;
+    background: var(--color-gray-50);
+    font-family: var(--font-secondary), sans-serif;
+    color: var(--color-gray-700);
+}
+
+.paymentOption + .paymentOption {
+    margin-top: 0.875rem;
+}
+
+.paymentOption input {
+    margin-top: 0.1875rem;
+    accent-color: var(--color-primary-darkBlue);
+}
+
+.paymentOption span {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.paymentOption strong {
+    color: var(--color-gray-900);
+}
+
+.paymentOption small {
+    font-size: 0.875rem;
+    line-height: 1.45;
+}
+
+.orderItems {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 0.0625rem solid var(--color-gray-200);
+}
+
+.orderItem {
+    display: grid;
+    grid-template-columns: 4rem minmax(0, 1fr) auto;
+    gap: 0.875rem;
+    align-items: center;
+}
+
+.itemImage {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.75rem;
+    background: var(--color-gray-50);
+    overflow: hidden;
+}
+
+.itemImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.itemInfo {
+    min-width: 0;
+}
+
+.itemInfo h3 {
+    font-family: var(--font-secondary), sans-serif;
+    font-weight: var(--fw-semibold);
+    font-size: 0.9375rem;
+    line-height: 1.4;
+    color: var(--color-gray-900);
+}
+
+.itemInfo span {
+    display: inline-block;
+    margin-top: 0.25rem;
+    font-family: var(--font-secondary), sans-serif;
+    font-size: 0.875rem;
+    color: var(--color-gray-500);
+}
+
+.orderItem strong {
+    font-family: var(--font-accent), sans-serif;
+    font-weight: var(--fw-medium);
+    color: var(--color-primary-red);
+}
+
+.totals {
+    padding-top: 1.25rem;
+}
+
+.totals div {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    border-bottom: 0.0625rem solid var(--color-gray-200);
+    font-family: var(--font-secondary), sans-serif;
+    color: var(--color-gray-600);
+}
+
+.totals strong {
+    color: var(--color-gray-900);
+}
+
+.totals .total {
+    border-bottom: none;
+    padding-top: 1rem;
+    font-weight: var(--fw-semibold);
+}
+
+.total strong {
+    font-family: var(--font-accent), sans-serif;
+    font-size: 1.75rem;
+    color: var(--color-primary-red);
+}
+
+.terms {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    background: #fff9df;
+    font-family: var(--font-secondary), sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--color-gray-700);
+}
+
+.terms input {
+    width: 1rem;
+    height: 1rem;
+    flex: 0 0 auto;
+    margin-top: 0.1875rem;
+    accent-color: var(--color-primary-darkBlue);
+}
+
+.placeOrder {
+    width: 100%;
+    height: 3rem;
+    margin-top: 1.25rem;
+    font-size: 1rem;
+}
+
+@media (max-width: 75rem) {
+    .checkoutGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .order {
+        position: static;
+    }
+}
+
+@media (max-width: 48rem) {
+    .main {
+        padding-top: 0.5rem;
+    }
+
+    .titleWrap {
+        margin-top: 0.75rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .title {
+        font-size: 2.25rem;
+    }
+
+    .details,
+    .order {
+        padding: 1rem;
+    }
+
+    .form {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .sectionHeader h2 {
+        font-size: 1.5rem;
+    }
+
+    .orderItem {
+        grid-template-columns: 3.5rem minmax(0, 1fr);
+    }
+
+    .orderItem strong {
+        grid-column: 2;
+    }
+
+    .itemImage {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}

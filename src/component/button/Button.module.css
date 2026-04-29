@@ -1,8 +1,8 @@
 .buttonStyle {
     min-width: 9.13rem;
     height: 2.75rem;
-    background-color: var(--color-primary-red);
-    border: none;
+    background-color: var(--button-accent, var(--color-primary-red));
+    border: 0.0625rem solid transparent;
     border-radius: 7.5rem;
     padding: 0.56rem 1.5rem 0.69rem;
     display: flex;
@@ -13,8 +13,20 @@
     font-weight: 600;
     font-size: 0.9375rem;
     line-height: 1;
-    color: var(--color-primary-white);
+    color: var(--button-text, var(--color-primary-white));
     box-shadow: 0 0.75rem 1.5rem rgba(249, 15, 74, 0.18);
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.buttonStyle:active {
+    background-color: var(--color-primary-white);
+    color: var(--button-accent, var(--color-primary-red)) !important;
+    border-color: var(--button-accent, var(--color-primary-red));
+    box-shadow: none;
+}
+
+.buttonStyle:active * {
+    color: inherit !important;
 }
 
 @media (max-width: 48rem) {

@@ -62,11 +62,11 @@
 }
 
 .iconLeft {
-    left: -0.5rem;
+    left: -3.5rem;
 }
 
 .iconRight {
-    right: -0.5rem;
+    right: -3.5rem;
 }
 
 @media (max-width: 75rem) {

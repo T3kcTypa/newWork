@@ -1,0 +1,202 @@
+.page {
+    background: var(--color-primary-white);
+}
+
+.main {
+    padding-top: 1rem;
+}
+
+.authWrap {
+    max-width: 39rem;
+    margin: 1.375rem auto 0;
+}
+
+.titleWrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.title {
+    font: var(--text-title);
+    color: var(--color-primary-darkBlue);
+}
+
+.authCard {
+    border: 0.0625rem solid var(--color-gray-200);
+    border-radius: 1rem;
+    background: var(--color-primary-white);
+    padding: 2rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.nameGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.fieldGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.fieldGroup label {
+    font-family: var(--font-secondary), sans-serif;
+    font-weight: var(--fw-semibold);
+    font-size: 0.9375rem;
+    line-height: 1.4;
+    color: var(--color-gray-900);
+}
+
+.fieldGroup input {
+    width: 100%;
+    height: 3rem;
+    border: 0.0625rem solid var(--color-gray-200);
+    border-radius: 0.75rem;
+    background: var(--color-gray-50);
+    padding: 0 1rem;
+    font-family: var(--font-secondary), sans-serif;
+    font-size: 1rem;
+    color: var(--color-gray-900);
+    outline: none;
+}
+
+.fieldGroup input:focus {
+    border-color: var(--color-primary-darkBlue);
+    background: var(--color-primary-white);
+}
+
+.terms {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-family: var(--font-secondary), sans-serif;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    color: var(--color-gray-700);
+}
+
+.terms input {
+    width: 1rem;
+    height: 1rem;
+    flex: 0 0 auto;
+    margin-top: 0.1875rem;
+    accent-color: var(--color-primary-darkBlue);
+}
+
+.createButton {
+    width: 17rem;
+    height: 2.75rem;
+    align-self: center;
+    font-size: 1rem;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+    font-family: var(--font-secondary), sans-serif;
+    font-size: 0.875rem;
+    color: var(--color-gray-500);
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 0.0625rem;
+    background: var(--color-gray-200);
+}
+
+.socials {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem;
+}
+
+.socialButton {
+    min-height: 3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: 0.0625rem solid var(--color-gray-200);
+    border-radius: 7.5rem;
+    background: var(--color-primary-white);
+    font-family: var(--font-secondary), sans-serif;
+    font-weight: var(--fw-semibold);
+    font-size: 0.9375rem;
+    color: var(--color-gray-800);
+}
+
+.socialButton:hover {
+    border-color: var(--color-primary-darkBlue);
+    color: var(--color-primary-darkBlue);
+}
+
+.socialIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--color-gray-100);
+    font-family: var(--font-ui), sans-serif;
+    font-weight: var(--fw-bold);
+    line-height: 1;
+}
+
+.signInText {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-family: var(--font-secondary), sans-serif;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    color: var(--color-gray-600);
+}
+
+.signInText a {
+    font-weight: var(--fw-semibold);
+    color: var(--color-primary-darkBlue);
+}
+
+@media (max-width: 48rem) {
+    .main {
+        padding-top: 0.5rem;
+    }
+
+    .authWrap {
+        margin-top: 0.75rem;
+    }
+
+    .titleWrap {
+        margin-bottom: 1.25rem;
+    }
+
+    .title {
+        font-size: 2.25rem;
+    }
+
+    .authCard {
+        padding: 1rem;
+    }
+
+    .nameGrid,
+    .socials {
+        grid-template-columns: 1fr;
+    }
+
+    .createButton {
+        width: 100%;
+    }
+}

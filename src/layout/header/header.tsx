@@ -69,7 +69,14 @@ export const Header = () => {
             <a href="#">Track Your Order</a>
             <div className={style.language}>
               <p>English</p>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#01ABBA">
+              <svg
+                width="28"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#01ABBA"
+                style={{ paddingLeft: "0.4rem" }}
+              >
                 <use href={`${sprite}#arrowDown`} />
               </svg>
             </div>
